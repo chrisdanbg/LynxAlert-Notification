@@ -5,8 +5,11 @@ Really simple Javascript alert I've built for personal purposes.
 # USAGE
 
 Don't forget to import the style and script files into your project.
- <link rel="stylesheet" href="lynxalert.css">
+
+```html
+<link rel="stylesheet" href="lynxalert.css">
 <script src="lynxalert.js"></script>
+```
 
 Then call:
 
