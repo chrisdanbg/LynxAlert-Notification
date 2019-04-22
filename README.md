@@ -4,7 +4,8 @@ Really simple Javascript alert I've built for personal purposes.
 
 # USAGE
 
-Don't forget to import the style and script files into your project.
+Don't forget to import the style and script files into your project. 
+The notification is stored in sessionStorage and displayed on the next page load.
 
 ```html
 <link rel="stylesheet" href="lynxalert.css">
@@ -14,7 +15,8 @@ Don't forget to import the style and script files into your project.
 Then call:
 
 ```javascript
-// color = currently only 'green' and 'red' colors.
+// color = currently only 'Green' and 'Red' colors.
 // msg = Your message.
-lynxAlert(color,msg);
+lynxAlert.Green(msg);
+lynxAlert.Red(msg);
 ```
