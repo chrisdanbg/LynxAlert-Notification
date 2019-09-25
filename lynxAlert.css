@@ -1,6 +1,8 @@
 ﻿.notification-body {
+    font-family: 'Poppins', sans-serif;
     opacity: 0;
-    width: 20%;
+    min-width: 200px;
+    width: 20vw;
     position: fixed;
     margin-top: 3rem;
     right: 2%;
@@ -8,15 +10,21 @@
     min-height: 50px;
     text-align: center;
     display: flex;
-    align-items: center; /* Vertical center alignment */
-    justify-content: center; /* Horizontal center alignment */
+    align-items: center;
+    /* Vertical center alignment */
+    justify-content: center;
+    /* Horizontal center alignment */
+    z-index: 9999;
 }
 
 .notification-msg {
-    font-size: 1.0vw;
+    margin-top: 10px;
+    font-size: 1.0em;
     font-weight: bold;
     color: white;
-    padding: 0 20px 0 10px;
+    margin-left: auto;
+    margin-right: auto;
+    display: inline-block;
 }
 
 .checkmark {
@@ -33,12 +41,14 @@
 }
 
 .animated {
+    animation-timing-function: ease-in-out;
     animation-name: anim;
-    animation-duration: 1s;
+    animation-duration: .3s;
     animation-fill-mode: forwards;
 }
 
 .goBack {
+    animation-timing-function: ease-in-out;
     animation-name: backAnim;
     animation-duration: 1s;
     animation-fill-mode: forwards;
@@ -48,6 +58,14 @@
     0% {
         transform: translateX(100px);
         opacity: 0;
+    }
+
+    70% {
+        transform: translateX(-10px);
+    }
+
+    90% {
+        transform: translateX(5px);
     }
 
     100% {
